@@ -1,5 +1,6 @@
 package com.brigdelabz.springpayrollapp.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,10 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.brigdelabz.springpayrollapp.dto.EmployeePayrollDTO;
 import com.brigdelabz.springpayrollapp.dto.ResponseDTO;
 import com.brigdelabz.springpayrollapp.model.EmployeePayrollData;
+import com.brigdelabz.springpayrollapp.services.IEmployeePayrollService;
 
 @RestController
 @RequestMapping("/payrollservice")
 public class EmployeePayrollController {
+	
+	@Autowired
+	private IEmployeePayrollService employeePayrollService;
 
 	@RequestMapping(value = { "", "/", "/get" })
 	public ResponseEntity<ResponseDTO> getEmployeePayrollData() {
