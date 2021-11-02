@@ -1,5 +1,7 @@
 package com.brigdelabz.springpayrollapp.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,9 +28,9 @@ public class EmployeePayrollController {
 
 	@RequestMapping(value = { "", "/", "/get" })
 	public ResponseEntity<ResponseDTO> getEmployeePayrollData() {
-		EmployeePayrollData employeePayrollData = null;
-		employeePayrollData = new EmployeePayrollData(1, new EmployeePayrollDTO("Lisa", 2000));
-		ResponseDTO responseDTO = new ResponseDTO("Get Call Success", employeePayrollData);
+		List<EmployeePayrollData> empDataList = null;
+		empDataList = employeePayrollService.getEmployeePayrollData();
+		ResponseDTO responseDTO = new ResponseDTO("Get Call Success", empDataList);
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
 	}
 

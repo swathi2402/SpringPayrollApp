@@ -1,5 +1,6 @@
 package com.brigdelabz.springpayrollapp.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -12,8 +13,9 @@ public class EmployeePayrollService implements IEmployeePayrollService {
 
 	@Override
 	public List<EmployeePayrollData> getEmployeePayrollData() {
-		// TODO Auto-generated method stub
-		return null;
+		List<EmployeePayrollData> employeeDataList = new ArrayList<>();
+		employeeDataList.add(new EmployeePayrollData(1, new EmployeePayrollDTO("Lisa", 2000)));
+		return employeeDataList;
 	}
 
 	@Override
