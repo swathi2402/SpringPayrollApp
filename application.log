@@ -4,3 +4,51 @@
 2021-11-03 19:04:04.573  WARN 31765 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-11-03 19:04:04.886  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Started SpringPayrollAppApplication in 2.801 seconds (JVM running for 3.259)
 2021-11-03 19:04:04.889  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Employee Payroll App Started
+2021-11-03 19:07:21.784  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Starting SpringPayrollAppApplication using Java 1.8.0_292 on swathi-Latitude-5511 with PID 31765 (/home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp/target/classes started by swathi in /home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp)
+2021-11-03 19:07:21.785 DEBUG 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 19:07:21.785  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : No active profile set, falling back to default profiles: default
+2021-11-03 19:07:22.084  WARN 31765 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 19:07:22.183  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Started SpringPayrollAppApplication in 0.441 seconds (JVM running for 200.556)
+2021-11-03 19:07:22.186  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Employee Payroll App Started
+2021-11-03 19:08:19.867  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Starting SpringPayrollAppApplication using Java 1.8.0_292 on swathi-Latitude-5511 with PID 31765 (/home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp/target/classes started by swathi in /home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp)
+2021-11-03 19:08:19.867 DEBUG 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 19:08:19.867  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : No active profile set, falling back to default profiles: default
+2021-11-03 19:08:20.131  WARN 31765 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 19:08:20.238  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Started SpringPayrollAppApplication in 0.399 seconds (JVM running for 258.612)
+2021-11-03 19:08:20.241  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Employee Payroll App Started
+2021-11-03 19:08:29.237  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Starting SpringPayrollAppApplication using Java 1.8.0_292 on swathi-Latitude-5511 with PID 31765 (/home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp/target/classes started by swathi in /home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp)
+2021-11-03 19:08:29.237 DEBUG 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 19:08:29.237  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : No active profile set, falling back to default profiles: default
+2021-11-03 19:08:29.485  WARN 31765 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 19:08:29.564  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Started SpringPayrollAppApplication in 0.357 seconds (JVM running for 267.937)
+2021-11-03 19:08:29.566  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Employee Payroll App Started
+2021-11-03 19:09:38.260  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Starting SpringPayrollAppApplication using Java 1.8.0_292 on swathi-Latitude-5511 with PID 31765 (/home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp/target/classes started by swathi in /home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp)
+2021-11-03 19:09:38.260 DEBUG 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 19:09:38.261  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : No active profile set, falling back to default profiles: default
+2021-11-03 19:09:38.504  WARN 31765 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 19:09:38.583  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Started SpringPayrollAppApplication in 0.343 seconds (JVM running for 336.957)
+2021-11-03 19:09:38.585  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Employee Payroll App Started
+2021-11-03 19:10:32.234  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Starting SpringPayrollAppApplication using Java 1.8.0_292 on swathi-Latitude-5511 with PID 31765 (/home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp/target/classes started by swathi in /home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp)
+2021-11-03 19:10:32.235  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : No active profile set, falling back to default profiles: default
+2021-11-03 19:10:32.349  INFO 31765 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-03 19:10:32.351  INFO 31765 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2021-11-03 19:10:32.418  INFO 31765 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-03 19:10:32.420  INFO 31765 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-03 19:10:32.420  INFO 31765 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-03 19:10:32.423  INFO 31765 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-03 19:10:32.424  INFO 31765 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 185 ms
+2021-11-03 19:10:32.450  INFO 31765 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2021-11-03 19:10:32.472  INFO 31765 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2021-11-03 19:10:32.475  INFO 31765 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-03 19:10:32.478  INFO 31765 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-11-03 19:10:32.484  INFO 31765 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-03 19:10:32.484  INFO 31765 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 19:10:32.503  WARN 31765 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 19:10:32.572  INFO 31765 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-03 19:10:32.580  INFO 31765 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-03 19:10:32.586  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Started SpringPayrollAppApplication in 0.389 seconds (JVM running for 390.959)
+2021-11-03 19:10:32.589  INFO 31765 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-11-03 19:10:32.589  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Employee Payroll App Started
+2021-11-03 19:11:27.077  INFO 31765 --- [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-03 19:11:27.080  INFO 31765 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2021-11-03 19:11:27.087  INFO 31765 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
