@@ -1,0 +1,6 @@
+2021-11-03 19:04:02.420  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Starting SpringPayrollAppApplication using Java 1.8.0_292 on swathi-Latitude-5511 with PID 31765 (/home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp/target/classes started by swathi in /home/swathi/Documents/Swathi/BridgeLabz Fellowship/STS/SpringPayrollApp)
+2021-11-03 19:04:02.421 DEBUG 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-03 19:04:02.422  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : No active profile set, falling back to default profiles: default
+2021-11-03 19:04:04.573  WARN 31765 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-03 19:04:04.886  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Started SpringPayrollAppApplication in 2.801 seconds (JVM running for 3.259)
+2021-11-03 19:04:04.889  INFO 31765 --- [restartedMain] c.b.s.SpringPayrollAppApplication        : Employee Payroll App Started
