@@ -22,7 +22,7 @@ import com.brigdelabz.springpayrollapp.services.IEmployeePayrollService;
 @RestController
 @RequestMapping("/payrollservice")
 public class EmployeePayrollController {
-	
+
 	@Autowired
 	private IEmployeePayrollService employeePayrollService;
 
@@ -51,7 +51,8 @@ public class EmployeePayrollController {
 	}
 
 	@PutMapping("/update/{empId}")
-	public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable("empId") int empId, @RequestBody EmployeePayrollDTO employeePayrollDTO) {
+	public ResponseEntity<ResponseDTO> updateEmployeePayrollData(@PathVariable("empId") int empId,
+			@RequestBody EmployeePayrollDTO employeePayrollDTO) {
 		EmployeePayrollData employeePayrollData = null;
 		employeePayrollData = employeePayrollService.updateEmployeePayrollData(empId, employeePayrollDTO);
 		ResponseDTO responseDTO = new ResponseDTO("Updated Employee Payroll Data Successful", employeePayrollData);
