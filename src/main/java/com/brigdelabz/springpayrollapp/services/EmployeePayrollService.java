@@ -22,7 +22,7 @@ public class EmployeePayrollService implements IEmployeePayrollService {
 	@Override
 	public EmployeePayrollData getEmployeePayrollDataById(int empId) {
 		return employeePayrollList.stream().filter(empData -> empData.getEmployeeId() == empId).findFirst()
-				.orElseThrow(() -> new EmployeePayrollException("Employee Not Found"));
+				.orElseThrow(() -> new EmployeePayrollException("Employee not found!"));
 	}
 
 	@Override
@@ -44,6 +44,6 @@ public class EmployeePayrollService implements IEmployeePayrollService {
 
 	@Override
 	public void deleteEmployeePayrollData(int empId) {
-		employeePayrollList.remove(empId - 1);
+		employeePayrollList.remove(getEmployeePayrollDataById(empId));
 	}
 }
