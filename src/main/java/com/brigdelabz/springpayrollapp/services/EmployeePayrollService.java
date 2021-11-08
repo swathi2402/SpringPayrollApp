@@ -1,6 +1,5 @@
 package com.brigdelabz.springpayrollapp.services;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,40 +18,36 @@ public class EmployeePayrollService implements IEmployeePayrollService {
 
 	@Autowired
 	private EmployeePayrollRepository employeeRepository;
-	
-	private List<EmployeePayrollData> employeePayrollList = new ArrayList<>();
 
 	@Override
 	public List<EmployeePayrollData> getEmployeePayrollData() {
-		return employeePayrollList;
+		return employeeRepository.findAll();
 	}
 
 	@Override
 	public EmployeePayrollData getEmployeePayrollDataById(int empId) {
-		return employeePayrollList.stream().filter(empData -> empData.getEmployeeId() == empId).findFirst()
-				.orElseThrow(() -> new EmployeePayrollException("Employee not found!"));
+		return employeeRepository.findById(empId).orElseThrow(
+				() -> new EmployeePayrollException("Employee with employee Id " + empId + " does not exists...!"));
 	}
 
 	@Override
 	public EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
 		EmployeePayrollData employeePayrollData = null;
 		employeePayrollData = new EmployeePayrollData(employeePayrollDTO);
-		employeePayrollList.add(employeePayrollData);
-		log.debug("Employee Data: "+ employeePayrollData.toString());
+		log.debug("Employee Data: " + employeePayrollData.toString());
 		return employeeRepository.save(employeePayrollData);
 	}
 
 	@Override
 	public EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO employeePayrollDTO) {
 		EmployeePayrollData employeePayrollData = this.getEmployeePayrollDataById(empId);
-		employeePayrollData.setName(employeePayrollDTO.name);
-		employeePayrollData.setSalary(employeePayrollDTO.salary);
-		employeePayrollList.set(empId - 1, employeePayrollData);
-		return employeePayrollData;
+		employeePayrollData.updateEmployeePayrollData(employeePayrollDTO);
+		return employeeRepository.save(employeePayrollData);
 	}
 
 	@Override
 	public void deleteEmployeePayrollData(int empId) {
-		employeePayrollList.remove(getEmployeePayrollDataById(empId));
+		EmployeePayrollData employeePayrollData = this.getEmployeePayrollDataById(empId);
+		employeeRepository.delete(employeePayrollData);
 	}
 }

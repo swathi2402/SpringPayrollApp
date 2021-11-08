@@ -45,7 +45,8 @@ public class EmployeePayrollController {
 	}
 
 	@PostMapping("/create")
-	public ResponseEntity<ResponseDTO> addEmployeePayrollData(@Valid @RequestBody EmployeePayrollDTO employeePayrollDTO) {
+	public ResponseEntity<ResponseDTO> addEmployeePayrollData(
+			@Valid @RequestBody EmployeePayrollDTO employeePayrollDTO) {
 		EmployeePayrollData employeePayrollData = null;
 		employeePayrollData = employeePayrollService.createEmployeePayrollData(employeePayrollDTO);
 		ResponseDTO responseDTO = new ResponseDTO("Created Employee Payroll Data Successful", employeePayrollData);
@@ -64,7 +65,7 @@ public class EmployeePayrollController {
 	@DeleteMapping("/delete/{empId}")
 	public ResponseEntity<ResponseDTO> deleteEmployeePayrollData(@PathVariable("empId") int empId) {
 		employeePayrollService.deleteEmployeePayrollData(empId);
-		ResponseDTO responseDTO = new ResponseDTO("Deleted Employee Payroll Data Successful", empId);
+		ResponseDTO responseDTO = new ResponseDTO("Deleted Employee Payroll Data Successful", "Deleted Id: " + empId);
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
 	}
 }
