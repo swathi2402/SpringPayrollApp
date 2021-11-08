@@ -18,36 +18,39 @@ import com.brigdelabz.springpayrollapp.dto.EmployeePayrollDTO;
 import lombok.Data;
 
 @Entity
-@Table(name="employee_payroll")
+@Table(name = "employee_payroll")
 public @Data class EmployeePayrollData {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name="employee_id")
+	@Column(name = "employee_id")
 	private int employeeId;
-	
-	@Column(name="name")
+
+	@Column(name = "name")
 	private String name;
 	private long salary;
 	public String gender;
-	
-	@Column(name="start_date")
+
+	@Column(name = "start_date")
 	public LocalDate startDate;
 	public String note;
-	
-	@Column(name="profile_pic")
+
+	@Column(name = "profile_pic")
 	public String profilePic;
-	
+
 	@ElementCollection
-	@CollectionTable(name="employee_department",joinColumns = @JoinColumn(name="id"))
-	@Column(name="department")
+	@CollectionTable(name = "employee_department", joinColumns = @JoinColumn(name = "id"))
+	@Column(name = "department")
 	public List<String> department;
 
 	public EmployeePayrollData() {
 	}
 
-	public EmployeePayrollData(int employeeId, EmployeePayrollDTO employeePayrollDTO) {
-		this.employeeId = employeeId;
+	public EmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
+		this.updateEmployeePayrollData(employeePayrollDTO);
+	}
+
+	public void updateEmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
 		this.name = employeePayrollDTO.name;
 		this.salary = employeePayrollDTO.salary;
 		this.gender = employeePayrollDTO.gender;
